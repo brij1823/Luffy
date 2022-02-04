@@ -1,9 +1,10 @@
-// function containsWord(str, word) {
-//     return str.match(new RegExp("\\b" + word + "\\b")) != null;
-//   }
-
-
-const text = document.querySelectorAll('h1,h2,h3,h4,p,li,td,caption,span,a');
+var flag = 0; 
+var on = true;
+function testing(){
+    if(flag%2 == 0){
+        if(on){
+            console.log('ON')
+            const text = document.querySelectorAll('h1,h2,h3,h4,p,li,td,caption,span,a');
 console.log('EQUALITY!!!!!!!!!!')
 for (let i=0; i < text.length; i++) {
 
@@ -44,3 +45,15 @@ for (let i=0; i < text.length; i++) {
      
 
 } 
+
+        }
+        else{
+            console.log('OFF')
+            window.location.reload();
+
+        }
+        on = !on;
+    }
+    flag = flag+1
+}
+window.onload = testing;

@@ -8,6 +8,9 @@
         "64":"icon64.png",
         "16":"icon16.png"
     },
+    "browser_action": {
+        "default_popup" : "popout.html"
+    },
     "content_scripts":[
         {
             "matches" : ["*://*/*"],
