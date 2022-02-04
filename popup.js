@@ -3,7 +3,7 @@ var on = true;
 function testing(){
     if(flag%2 == 0){
         if(on){
-            console.log('ON')
+            console.log('ON Toggle')
             const text = document.querySelectorAll('h1,h2,h3,h4,p,li,td,caption,span,a');
 console.log('EQUALITY!!!!!!!!!!')
 for (let i=0; i < text.length; i++) {
@@ -48,7 +48,7 @@ for (let i=0; i < text.length; i++) {
 
         }
         else{
-            console.log('OFF')
+            console.log('OFF Toggle')
             window.location.reload();
 
         }
