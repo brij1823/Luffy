@@ -3,28 +3,29 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
-<script src="popup.js"></script>
 </head>
 <body>
-    <div style="display: flex; flex-direction: column;">
-        <h2>Luffy</h2>
+    <div style="display: flex; flex-direction: column;text-align: center; ">
         <div style="display: flex; flex-direction: row;">
-            <p style="font-weight: 800; margin-right: 50px;font-size: 15px;">On/Off</p>
-
-            <p>
-                <label class="toggleSwitch nolabel" onclick="testing()">
-                      <input type="checkbox" checked />
-                      <span>
-                          <span>OFF</span>
-                          <span>ON</span>
-                      </span>
-                      <a></a>
-                  </label>
-              </p>
-              
+            
+            <button id="toggleButton" style="background: transparent;border: none !important; font-size: 0;">
+                <p>
+                    <label class="toggleSwitch nolabel">
+                        <input type="checkbox" checked />
+                        <span>
+                            <span>OFF</span>
+                            <span>ON</span>
+                        </span>
+                        <a></a>
+                    </label>
+                    
+                </p>
+            </button>
+          
         </div>
     </div>
 
 
+<script src="popup.js"></script>
 </body>
 </html> 
